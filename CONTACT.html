@@ -1,0 +1,86 @@
+!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PROFIL</title>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">Issa Mbaye</a>
+
+        <nav class="navbar">
+            <span id="typing-text"></span>
+            <a href="PROFIL.html" class="active">PROFIL</a>
+            <a href="BTS SIO.html">BTS SIO</a>
+            <a href="ÉCOLE & ENTREPRISE.html">ÉCOLE & ENTREPRISE</a>
+            <a href="RÉALISATIONS.html">RÉALISATIONS</a>
+            <a href="VEILLE TECHNOLOGIQUE.html">VEILLE TECHNOLOGIQUE</a>
+            <a href="CONTACT.html" class="active">CONTACT</a>
+        </nav>
+    </header>
+    <section id="contact" class="contact-section">
+    <h2 class="contact-title">Contact</h2>
+    <p class="contact-subtitle">
+        N’hésitez pas à me contacter pour toutes questions ou renseignements complémentaires via ce formulaire.
+    </p>
+
+    <div class="contact-container">
+        
+        <!-- ========= COLONNE GAUCHE ========= -->
+        <div class="contact-info card">
+
+            <p><strong>📍 Localisation :</strong><br>75 – Paris, France</p>
+
+            <p><strong>📧 Email :</strong><br>
+                issa.mbaye1875018@gmail.com
+            </p>
+
+            <p><strong>📱 Téléphone :</strong><br>
+                07 69 26 46 20
+            </p>
+
+            <div class="linkedin-box">
+                <a href="https://www.linkedin.com/in/issa-mbaye/" target="_blank" class="linkedin-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" 
+                         alt="LinkedIn" 
+                         class="linkedin-icon">
+                    Mon profil LinkedIn
+                </a>
+            </div>
+
+        </div>
+
+        <!-- ========= COLONNE DROITE ========= -->
+        <div class="contact-form card">
+            <h3>Formulaire de Contact</h3>
+
+            <form id="formContact">
+
+                <label>Nom :</label>
+                <input type="text" id="nom" required>
+
+                <label>Email :</label>
+                <input type="email" id="email" required>
+
+                <label>Message :</label>
+                <textarea id="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn-submit">Envoyer</button>
+
+                <p id="confirmationMessage" class="confirmation-message">
+                    Votre message a bien été envoyé ✔️
+                </p>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+<script src="contact.js"></script>
+
+</body>
+</html>
+
