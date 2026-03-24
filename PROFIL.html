@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>PROFIL</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Issa Mbaye</a>
+
+        <nav class="navbar">
+            <span id="typing-text"></span>
+            <a href="PROFIL.html" class="active">PROFIL</a>
+            <a href="BTS SIO.html">BTS SIO</a>
+            <a href="ÉCOLE & ENTREPRISE.html">ÉCOLE & ENTREPRISE</a>
+            <a href="RÉALISATIONS.html">RÉALISATIONS</a>
+            <a href="VEILLE%20TECHNOLOGIQUE.html">VEILLE TECHNOLOGIQUE</a>
+            <a href="CONTACT.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="PROFIL">
+        <div class="PROFIL-content">
+
+            <h1 class="text">Bonjour, je m'appelle<br>Issa MBAYE</h1>
+
+            <h3>Étudiant en BTS SIO — OPTION SLAM</h3>
+
+            <p>Ce site présente mon parcours, mes compétences en développement logiciel, et mes projets réalisés durant ma formation et mes expériences personnelles.
+                <br><br>
+                Bonne visite et merci pour votre intérêt !
+            </p>
+
+            <div class="btn-box">
+                <a id="cvclick" href="cv.pdf" target="_blank">CV</a>
+                <a href="#">Tableau De Synthèse</a>
+                <a href="#">Certifications</a>
+            </div>
+
+            <img src="img/personnequicode.png" alt="Personne qui code" class="image-custom">
+
+        </div>
+    </section>
+
+    <style>
+        /* ── Bloquer tout scroll et scrollbar ── */
+        html, body {
+            overflow: hidden !important;
+            height: 100vh !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            scrollbar-width: none !important;
+        }
+
+        html::-webkit-scrollbar,
+        body::-webkit-scrollbar {
+            display: none !important;
+        }
+
+        /* ── Position du contenu ── */
+        .PROFIL {
+            align-items: flex-start !important;
+            padding-top: 22vh !important;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .PROFIL-content {
+            margin-top: 0;
+        }
+
+        /* ── Titre avec police Syne ── */
+        .PROFIL-content h1.text {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2rem, 3.5vw, 52px);
+            line-height: 1.15;
+        }
+
+        /* ── Lueur décorative derrière le contenu ── */
+        .PROFIL::before {
+            content: '';
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(0, 171, 240, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+            border-radius: 50%;
+        }
+
+        /* ── Ligne décorative sous le h3 ── */
+        .PROFIL-content h3 {
+            position: relative;
+            padding-bottom: 18px;
+            margin-bottom: 8px;
+        }
+
+        .PROFIL-content h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 48px;
+            height: 2px;
+            background: linear-gradient(to right, #00abf0, transparent);
+            border-radius: 2px;
+        }
+    </style>
+
+    <script src="script.js"></script>
+</body>
+</html>
